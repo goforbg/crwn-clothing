@@ -1,5 +1,5 @@
 .collection-item {
-   width: 22%;
+   width: 20vw; // earlier 22%, which is 22% of the parent container
    display: flex;
    flex-direction: column;
    height: 350px;
