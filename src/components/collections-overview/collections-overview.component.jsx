@@ -5,14 +5,21 @@ import { createStructuredSelector } from 'reselect';
 import { selectCollectionsForPreview } from '../../redux/shop/shop.selector';
 import CollectionPreview from '../collection-preview/collection-preview.component';
 
-import './collections-overview.styles.scss';
+// import './collections-overview.styles.scss';
 
-const CollectionsOverview = ({ collections }) => (
-   <div className="collections-overview">
+import { CollectionsOverviewContainer } from './collections-overview.styles';
+
+const CollectionsOverview = ({ collections, match, history }) => (
+   <CollectionsOverviewContainer>
       {collections.map(({ id, ...otherCollectionProps }) => (
-         <CollectionPreview key={id} {...otherCollectionProps} />
+         <CollectionPreview
+            key={id}
+            {...otherCollectionProps}
+            match={match}
+            history={history}
+         />
       ))}
-   </div>
+   </CollectionsOverviewContainer>
 );
 
 const mapStateToProps = createStructuredSelector({
