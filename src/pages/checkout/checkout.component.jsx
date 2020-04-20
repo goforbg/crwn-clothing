@@ -10,8 +10,6 @@ import {
    selectCartTotal,
 } from '../../redux/cart/cart.selector';
 
-// import './checkout.styles.scss';
-
 import {
    CheckoutPageContainer,
    CheckoutHeader,

@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 
 import { addItem } from '../../redux/cart/cart.actions';
 
-// import './collection-item.styles.scss';
-
 import {
    CollectionItemContainer,
    BackgroundImage,
