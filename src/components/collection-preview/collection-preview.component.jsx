@@ -10,7 +10,6 @@ import {
 
 const CollectionPreview = (props) => {
    const { title, items, match, history, routeName } = props;
-   console.log('CollectionPreview', props);
 
    return (
       <CollectionPreviewContainer>
