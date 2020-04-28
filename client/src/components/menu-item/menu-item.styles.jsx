@@ -31,6 +31,10 @@ export const MenuItemContainer = styled.div`
    &:last-child {
       margin-left: 7.5px;
    }
+
+   @media screen and (max-width: 800px) {
+      height: 240px;
+   }
 `;
 
 export const BackgroundImageContainer = styled.div`
@@ -54,14 +58,14 @@ export const ContentContainer = styled.div`
    position: absolute;
 `;
 
-export const ContentTitle = styled.h1`
+export const ContentTitle = styled.span`
    font-weight: bold;
    margin-bottom: 6px;
    font-size: 22px;
    color: #4a4a4a;
 `;
 
-export const ContentSubtitle = styled.p`
+export const ContentSubtitle = styled.span`
    font-weight: lighter;
    font-size: 16px;
 `;
