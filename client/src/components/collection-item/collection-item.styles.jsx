@@ -57,13 +57,17 @@ export const NameContainer = styled.span`
    margin-bottom: 15px;
 
    @media screen and (max-width: 800px) {
-      width: 85%;
+      width: 75%;
    }
 `;
 
 export const PriceContainer = styled.span`
    width: 10%;
    text-align: right;
+
+   @media screen and (max-width: 800px) {
+      width: 25%;
+   }
 `;
 
 export const AddButton = styled(CustomButton)`

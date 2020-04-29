@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const CollectionPreviewContainer = styled.div`
    display: flex;
    flex-direction: column;
-   margin-bottom: 30px;
+   margin-bottom: 25px;
 
    @media screen and (max-width: 800px) {
       align-items: center;
@@ -12,6 +12,7 @@ export const CollectionPreviewContainer = styled.div`
 
 export const TitleContainer = styled.h1`
    font-size: 28px;
+   margin-top: 20px;
    margin-bottom: 25px;
    cursor: pointer;
 
@@ -23,6 +24,10 @@ export const TitleContainer = styled.h1`
 export const PreviewContainer = styled.div`
    display: flex;
    justify-content: space-between;
+
+   & > div {
+      margin-bottom: 15px;
+   }
 
    @media screen and (max-width: 800px) {
       display: grid;

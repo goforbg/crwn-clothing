@@ -11,7 +11,8 @@ export const CollectionPageContainer = styled.div`
 
 export const CollectionTitle = styled.h2`
    font-size: 28px;
-   margin: 0 auto 30px;
+   margin-top: 20px;
+   margin-bottom: 25px;
 `;
 
 export const CollectionItemsContainer = styled.div`
@@ -20,7 +21,7 @@ export const CollectionItemsContainer = styled.div`
    grid-gap: 10px;
 
    & > div {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
    }
 
    @media screen and (max-width: 800px) {
