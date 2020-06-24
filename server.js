@@ -22,8 +22,14 @@ app.use(cors());
 if (process.env.NODE_ENV === 'production') {
    app.use(express.static(path.join(__dirname, 'client/build')));
 
-   app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'client/build'), 'index.html');
+   app.get('/*', (req, res) => {
+      console.log('reached here');
+      try {
+         res.sendFile(path.join(__dirname, 'client/build'), '/public/index.html');
+         console.log('sent to ' + req.url);
+      } catch (err) {
+         console.log(err);
+      }
    });
 }
 

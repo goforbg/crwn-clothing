@@ -19,6 +19,8 @@ const SignInAndSignUpPage = lazy(() =>
    import('./pages/sign-in-and-sign-up/sign-in-and-sign-up.component')
 );
 
+console.log('app js reached');
+
 const App = ({ checkUserSession, currentUser }) => {
    useEffect(() => {
       checkUserSession();
@@ -37,13 +39,7 @@ const App = ({ checkUserSession, currentUser }) => {
                   <Route
                      exact
                      path="/signin"
-                     render={() =>
-                        currentUser ? (
-                           <Redirect to="/" />
-                        ) : (
-                           <SignInAndSignUpPage />
-                        )
-                     }
+                     render={() => (currentUser ? <Redirect to="/" /> : <SignInAndSignUpPage />)}
                   />
                </Suspense>
             </ErrorBoundary>
